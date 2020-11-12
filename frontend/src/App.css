@@ -1,0 +1,102 @@
+.principal-container {
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+
+
+.titulo-imagens {
+  text-align: center;
+  
+}
+
+/* Split the screen in half */
+.split {
+  height: 60%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+  
+}
+
+.produto-1 {
+  text-align: center;
+  position: relative;
+  right: 350px;
+  top: 110px;
+  
+}
+
+.produto-2 {
+  text-align: center;
+  position: relative;
+  left: 350px;
+  bottom:30px;
+  
+}
+
+.titulo-da-pesquisa {
+  text-align: center;
+  position: relative;
+  top:150px;
+  width: 300px;
+  
+}
+
+.mr-sm-2 {
+  position: relative;
+  bottom: 10px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  
+  
+}
+
+.link {
+ position: absolute;
+ left: 20%;
+}
+
+Button {
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  height: auto;
+  border-radius: 30px;
+}
+
+
+
