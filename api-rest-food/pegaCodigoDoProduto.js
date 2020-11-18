@@ -52,7 +52,7 @@ module.exports = {
         // }
 
 
-        //Após a insreção, descomente este código para puxar os codigos da collection.
+        //Após a inserção, descomente este código para puxar os codigos da collection.
         // var listaDeCodigos = []; //armazena apenas os códigos dos produtos disponíveis no ficheiro
         // var query = ProdutosCodificados.find({}, "input");
         // query.exec(function (err, codigosProdutos) {

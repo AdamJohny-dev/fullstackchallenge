@@ -31,8 +31,8 @@ class App extends React.Component {
           <div class="titulo-da-pesquisa">
             <h1>Lista de Produtos</h1>
             <ul>
-              <li><td class="link"><a href={"http://localhost:5000/products"}>Ir para sistema Web CRON</a></td></li>
-              <li><td class="link"><a href={"http://localhost:3030/estados"}>Ir para lista de produtos</a></td></li>
+              <li><td class="link"><a href={"http://localhost:5000/products/code"}>Ir para sistema Web CRON</a></td></li>
+              <li><td class="link"><a href={"http://localhost:5000/products"}>Ir para lista de produtos</a></td></li>
             </ul>
             
           </div>

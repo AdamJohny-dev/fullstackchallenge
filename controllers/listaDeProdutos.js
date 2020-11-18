@@ -1,6 +1,6 @@
 const db = require('../database/connection');
 var listaDeProdutosProntos = require("../api-rest-food/pegaListaDeProdutos");
-var decisao = 1;
+var decisao = 1; //serve para simular um button no frontend
 
 var codigoParaPut = '';
 var produto = [];

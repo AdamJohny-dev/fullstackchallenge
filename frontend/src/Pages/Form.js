@@ -11,7 +11,7 @@ function Form()  {
     const [estados, setEstados] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/products/').then(response => {
+        axios.get('http://localhost:5000/products/code').then(response => {
             setEstados(response.data);
         })
     }, []);
@@ -30,7 +30,8 @@ function Form()  {
                         <label>
                             <select name="cmbUF" id="cmbUF" >
                                 <option value="0">Selecione uma opção</option>
-                                {estados.map(estado => (<option key={estado.code} value={estado.id}>{estado.code}</option>))}
+                                {estados.map(estado =><option>{estado}</option>)}
+                                {/* {<option value="1">{estados}</option>} */}
                             </select>
                         </label>
                     </div>

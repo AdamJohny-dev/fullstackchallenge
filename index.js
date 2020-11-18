@@ -1,8 +1,7 @@
 const customExpress = require('./config/customExpress');
-//const ficheiro = require ('./open-food-facts-storage/trataFicheiroDeProdutos');
-//const lista = require('./controllers/listaDeProdutos');
-//const atualiza = require('./api-rest-food/pegaCodigoDoProduto');
-//const downloadFicheiro = require('./open-food-facts-storage/openFoodFactsDbs')
+const ficheiro = require ('./open-food-facts-storage/trataFicheiroDeProdutos');
+
+
 
 
 

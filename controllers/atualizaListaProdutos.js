@@ -1,6 +1,6 @@
 const db = require('../database/connection');
 var listaDeProdutosProntos = require("../api-rest-food/pegaListaDeProdutos");
-var decisao = 1;
+var decisao = 2; //serve para simular um button no frontend
 
 var codigoParaPut = '';
 var produto = [];
@@ -26,7 +26,8 @@ if(decisao == 2) { //futuro button no frontend
                   console.log("Numero de vezes: " + inc);
                  
                   
-                  produto[inc] = JSON.parse(codigoParaPut);
+                  produto[inc] = JSON.parse(codigoParaPut).input.product_name; //caminha entre os keys do json
+                  //produto[inc] = JSON.parse(codigoParaPut).input;
                   inc++;
                 });
                 
@@ -36,10 +37,16 @@ if(decisao == 2) { //futuro button no frontend
             }
             atualizaLista();
           })
-        
-          app.put('/products/code', (req, res, next) => {
+          
+          //certo seria app.put conforme especificações de projeto
+          app.get('/products/code', (req, res, next) => {
             console.log("Retornou o produto especifico!");
-            res.send(JSON.stringify(produto).split("}",1));
+            //res.send(JSON.stringify(produto).split("}").join(""));
+            // res.send(JSON.stringify(produto).split("}",1).join("").split("[").join("").split("]").join("")
+            //     .split(",")[20]); //localiza nome do produto (pesquisaProduto)
+            res.send(JSON.stringify(produto).split("}",1).join("").split("[").join("").split("]").join("")
+                .split(",")); //localiza nome do produto (pesquisaProduto)
+            
           })
           
         
